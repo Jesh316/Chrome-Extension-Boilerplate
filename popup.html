@@ -1,31 +1,42 @@
-<!-- Extension initialized with https://github.com/virejdasani/Chrome-Extension-Boilerplate -->
-
+<!-- popup.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" href="assets/icon.png" />
-  <link rel="stylesheet" href="style.css">
-
-  <title>Your extension name</title>
+    <meta charset="UTF-8">
+    <title>AI Image Detector</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <h1>Your Extension</h1>
-
-  <p>
-    <a class="indicator" href="https://www.youtube.com/channel/UCRzS48bskynAxoI38BFypfQ?sub_confirmation=1"
-      target="_blank">Subscribe to Virej</a> • <a class="indicator"
-      href="https://github.com/virejdasani/Chrome-Extension-Boilerplate" target="_blank">Give the repo
-      a ⭐️</a>
-  </p>
-
-  <script src=" popup.js"></script>
+    <div class="container">
+        <header>
+            <h1 class="title">FakeReal</h1>
+            <img src="assets/icon16.png" alt="Logo" width="40" height="40">
+        </header>
+        <section class="content-container">
+            <div class="instructions-box">
+                <h2>Instructions</h2>
+                <!-- Added an element with id="instructions" -->
+                <p id="instructions"></p>
+                <ol>
+                    <li>Right-click on an image</li>
+                    <li>Click "Check if image is AI-generated"</li>
+                    <li>Wait a few seconds for analysis</li>
+                    <li>Get results</li>
+                </ol>
+            </div>
+        </section>
+        <footer class="footer-box">
+            <a href="http://127.0.0.1:5000/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="has-text-link">
+                                Issue with the extension? Try the website.
+            </a>
+        </footer>
+    </div>
+    <!-- Include the script at the end of the body -->
+    <script src="popup.js"></script>
 </body>
-
 </html>

@@ -1,25 +1,71 @@
-html,
 body {
-  width: 420px;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+  font-family: Helvetica, sans-serif;
+  background:  #515651;
+  background: radial-gradient(circle, rgba(216,117,160,1) 0%, rgba(238,166,222,1) 47%, rgba(237,180,126,1) 77%, #515651 90%);
+  color: dimgray;
+  padding: 20px; /* Add padding around the body */
 
-body {
-  padding-left: 0px;
-  padding-right: 0px;
-  margin: auto;
 }
-
-#indicators {
-  padding-top: 15px;
-  padding-bottom: 20px;
-  text-align: center;
-  color: #999;
-}
-
-#repo-links {
+header {
+  padding: 0 var(--spacer-base);
+  background-color: var(--color-back-dark);
+  height: var(--header-height);
+  /*I2 - used flexbox mode to make h1 and img flex items 
+          and be able to space them along main-axis
+          and to center the items along the cross-axis */
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px; /* Add padding inside the container */
+
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+
+.instructions-box {
+  border: 2px pink;
+  border-radius: 25px;
+  padding: 20px;
+  flex: auto;
+  min-width: 200px;
+  color: black;
+  box-shadow: 3px 3px 30px white;
+}
+
+.footer-box {
+  border: 2px pink;
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 30px white;
+  color: black;
+
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.instructions-box h2 {
+  margin-bottom: 10px;
+  flex: auto;
+}
+
+footer p {
+  margin: 0;
+}
+.title {
+  color:black;
 }
